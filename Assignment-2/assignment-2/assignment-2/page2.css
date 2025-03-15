@@ -1,0 +1,187 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif,Inria Serif;
+}
+
+/* Body */
+body {
+    background-color: #67C53C;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    border-bottom: 2px solid #ddd;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li {
+    display: inline-block
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+nav .register-btn {
+    background-color: #616BAD;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+nav .register-btn:hover {
+    background-color: #004299;
+}
+
+/* Main Section */
+.main-content {
+    background-color: #67C53C;
+    text-align: center;
+    padding: 40px 20px;
+    color: 1A1919;
+}
+
+/* Form Heading */
+.main-content h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Form Container */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Input Fields */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Two-column layout for First Name and Last Name */
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row input {
+    width: 100%;
+}
+
+/* center the Submit Button */
+form input[type="submit"] {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #A3A9D1;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    text-align:center;
+}
+
+form input[type="submit"]:hover {
+    background-color: #004299;
+}
+/* Footer */
+footer {
+    background-color: #f9f9f9;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 2px solid #ddd;
+}
+
+footer div {
+    margin: 10px 0;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+footer a:hover {
+    color: #007bff;
+}
+
+footer .social-icons a {
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+footer .social-icons a:hover {
+    color: #007bff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .main-content h1 {
+        font-size: 1.5em;
+    }
+}
+

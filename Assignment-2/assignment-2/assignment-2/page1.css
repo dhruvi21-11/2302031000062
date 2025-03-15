@@ -1,0 +1,154 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif,Inria Serif;
+}
+
+/* Body */
+body {
+    background-color: #67C53C;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    border-bottom: 2px solid #ddd;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li {
+    display: inline-block
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+nav .register-btn {
+    background-color: #616BAD;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+nav .register-btn:hover {
+    background-color: #004299;
+}
+
+/* Main Section */
+.main-content {
+    background-color: #4CAF50;
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+.main-content h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main-content .explore-btn {
+    background-color: #f4a261;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.main-content .explore-btn:hover {
+    background-color: #e76f51;
+}
+
+/* Footer */
+footer {
+    background-color: #f9f9f9;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 2px solid #ddd;
+}
+
+footer div {
+    margin: 10px 0;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+footer a:hover {
+    color: #007bff;
+}
+
+footer .social-icons a {
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+footer .social-icons a:hover {
+    color: #007bff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .main-content h1 {
+        font-size: 1.5em;
+    }
+}
